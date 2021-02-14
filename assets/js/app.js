@@ -23,3 +23,18 @@ function BMI(heightSquared){
         return weight / heightSquared;
     }
 }
+
+var showContent = {
+    view() {
+        console.log(this.message);
+    }
+}
+
+class text{
+    constructor(message){
+        this.message = message;
+    }
+}
+
+// console.log(Reflect.getPrototypeOf(text) + "\n\n");
+Reflect.setPrototypeOf(text.prototype, showContent);
