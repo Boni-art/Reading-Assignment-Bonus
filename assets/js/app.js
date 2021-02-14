@@ -38,3 +38,7 @@ class text{
 
 // console.log(Reflect.getPrototypeOf(text) + "\n\n");
 Reflect.setPrototypeOf(text.prototype, showContent);
+
+function tags(strings, ...names) {
+    return names.join(' ');
+}
