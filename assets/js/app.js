@@ -88,6 +88,21 @@ function tags(strings, ...names) {
 
         console.log(personToCalculate, idChecker, persondb);  
         init();
+    }else if(choice == 2) {
+        function* namegen(map1) {
+            for (const [key, value] of map1) {
+                yield [key, value];
+            }
+        }
+
+        const dbGen = namegen(persondb);
+        for (const individual of dbGen) {
+            let nameInfo = tags`${individual[0]}, ${individual[1].firstName}, ${individual[1].LastName}`;
+            console.log(nameInfo);
+        }
+        init();
+    }else{
+        alert("Wrong input please try again.");
     }
 
 
