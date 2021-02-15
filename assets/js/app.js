@@ -84,7 +84,7 @@ function tags(strings, ...names) {
         let weight = prompt("Enter the person's weight");
         let newText = new text(`${Reflect.get(personToCalculateInList, 0)} ${Reflect.get(personToCalculateInList, 1)}'s Bmi index is ${bmi(weight)}`);
         newText.view();
-        // console.log(Reflect.getPrototypeOf(newText) + "\n");
+
 
         console.log(personToCalculate, idChecker, persondb);  
         init();
